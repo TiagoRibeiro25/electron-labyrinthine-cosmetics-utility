@@ -7,7 +7,7 @@ const Background: React.FC<PropsWithChildren> = ({
 		<div
 			className="h-screen w-screen"
 			style={{
-				backgroundImage: "url('/images/background.jpg')",
+				backgroundImage: "url('images/background.jpg')",
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 			}}

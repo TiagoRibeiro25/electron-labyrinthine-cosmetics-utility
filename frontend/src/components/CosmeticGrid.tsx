@@ -19,7 +19,7 @@ const CosmeticGrid: React.FC<CosmeticGridProps> = ({
 				return (
 					<img
 						key={cosmetic.id}
-						src={`/images/cosmetics/${cosmetic.id}.png`}
+						src={`images/cosmetics/${cosmetic.id}.png`}
 						alt={cosmetic.name}
 						title={`${cosmetic.name} (${isOwned ? "Owned" : "Locked"})`}
 						className={`w-20 h-20 transition-opacity duration-200 rounded cursor-pointer ${
