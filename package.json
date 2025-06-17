@@ -1,0 +1,44 @@
+{
+	"name": "electron-labyrinthine-cosmetics-utility",
+	"version": "1.0.0",
+	"main": "main.js",
+	"author": "Tiago Ribeiro",
+	"scripts": {
+		"dev": "electron .",
+		"frontend": "npm run dev --prefix frontend",
+		"build:frontend": "cd frontend && npm run build",
+		"build": "npm run build:frontend && electron-builder"
+	},
+	"devDependencies": {
+		"electron": "^34.0.0",
+		"electron-builder": "^26.0.12"
+	},
+	"build": {
+		"appId": "com.TiagoRibeiro25.labyrinthine-cosmetics-utility",
+		"productName": "Labyrinthine Cosmetics Utility",
+		"files": [
+			"main.js",
+			"preload.js",
+			"package.json",
+			"assets/**",
+			"frontend/dist/**"
+		],
+		"directories": {
+			"buildResources": "assets"
+		},
+		"mac": {
+			"icon": "assets/icon.png"
+		},
+		"linux": {
+			"icon": "assets/icon.png",
+			"target": [
+				"AppImage"
+			],
+			"category": "Utility"
+		},
+		"win": {
+			"icon": "assets/icon.png",
+			"target": "portable"
+		}
+	}
+}
