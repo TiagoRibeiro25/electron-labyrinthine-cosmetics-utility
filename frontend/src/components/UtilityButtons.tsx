@@ -14,7 +14,8 @@ const UtilityButtons: React.FC = (): React.JSX.Element => {
 	};
 
 	const handleGitHubClick = (): void => {
-		const url = "#";
+		const url =
+			"https://github.com/TiagoRibeiro25/electron-labyrinthine-cosmetics-utility";
 		window.open(url, "_blank", "noopener,noreferrer");
 	};
 
