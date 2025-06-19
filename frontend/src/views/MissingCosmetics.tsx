@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import GoBackButton from "../components/GoBackButton";
 import CosmeticGrid from "../components/CosmeticGrid";
-import types from "../data/types.json";
 import cosmetics from "../data/cosmetics.json";
 import { getLocalCosmetics, setLocalCosmetics } from "../utils/storage";
 import type { Cosmetic } from "../global";
@@ -19,7 +18,7 @@ const MissingCosmetics: React.FC = (): React.JSX.Element => {
 	};
 
 	// Gather all missing cosmetics grouped by type
-	const missingByType = types
+	const missingByType = Object.keys(cosmetics)
 		.map((type) => {
 			// @ts-expect-error cosmetics[type] is valid
 			const missing = cosmetics[type].filter(

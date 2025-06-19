@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import GoBackButton from "../components/GoBackButton";
 import CosmeticGrid from "../components/CosmeticGrid";
-import types from "../data/types.json";
 import cosmetics from "../data/cosmetics.json";
 import { getLocalCosmetics, setLocalCosmetics } from "../utils/storage";
 
@@ -23,7 +22,7 @@ const ManageCosmetics: React.FC = (): React.JSX.Element => {
 		setLocalCosmetics(updated);
 	};
 
-	const filteredTypes = selectedType ? [selectedType] : types;
+	const filteredTypes = selectedType ? [selectedType] : Object.keys(cosmetics);
 
 	return (
 		<>
@@ -37,7 +36,7 @@ const ManageCosmetics: React.FC = (): React.JSX.Element => {
 						{/* Sidebar */}
 						<div className="w-72 h-full bg-gray-800 rounded-lg shadow-lg mr-6 bg-opacity-50">
 							<ul className="list-none p-4">
-								{types.map((type) => (
+								{Object.keys(cosmetics).map((type) => (
 									<li
 										key={type}
 										className={`text-white hover:bg-gray-700 p-2 rounded cursor-pointer ${
