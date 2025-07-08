@@ -19,7 +19,7 @@ A desktop utility built with Electron to manage cosmetics in the game _Labyrinth
 1. Clone the repository:
    ```bash
    git clone https://github.com/TiagoRibeiro25/electron-labyrinthine-cosmetics-utility.git
-   cd labyrinthine-cosmetics-app
+   cd electron-labyrinthine-cosmetics-utility
    ```
 2. Install dependencies:
    ```bash
