@@ -1,6 +1,6 @@
 # Labyrinthine Cosmetics Utility Electron App
 
-![App Screenshot](./screenshot.png) <!-- Replace with your actual image path -->
+![App Screenshot](./screenshot.png)
 
 A desktop utility built with Electron to manage cosmetics in the game _Labyrinthine_.
 
