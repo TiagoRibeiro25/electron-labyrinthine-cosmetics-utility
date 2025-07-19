@@ -1,5 +1,6 @@
 {
 	"name": "electron-labyrinthine-cosmetics-utility",
+	"description": "labyrinthine-cosmetics-utility",
 	"version": "1.0.0",
 	"main": "main.js",
 	"author": "Tiago Ribeiro",
